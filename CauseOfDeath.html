@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Cause Of Death</title>
-        <link rel="stylesheet" href="assets/css/tailwind.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -33,29 +33,14 @@
         <section class="py-16 bg-black">
             <div class="container max-w-screen-xl mx-auto px-4">
                 <nav
-                    class="flex-wrap lg:flex items-center justify-between mb-24 xl:mb-48"
+                    class="flex-wrap flex items-center justify-center mb-24 xl:mb-48"
                     x-data="{navbarOpen:false}"
                 >
-                    <div class="flex items-center bg-gradient-to-r from-red-800 to-danger bg-clip-text text-transparent mb-10 lg:mb-0 ">
+                    <div class="flex items-center bg-gradient-to-r from-red-800 to-red-400 bg-clip-text text-transparent mb-10 lg:mb-0 ">
                         <b class="font-large text-3xl">Cause Of Death </b>
                     </div>
 
-                    <ul
-                        class="lg:flex flex-col lg:flex-row lg:items-center lg:space-x-20 mb-10 xl:mb-0"
-                        :class="{'hidden':!navbarOpen,'flex':navbarOpen}"
-                    >
-                        
-                        <li
-                            class="font-medium text-gray-900 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0"
-                        >
-                            <a href="#video" class="bg-gradient-to-r from-gray-500 to-white bg-clip-text text-transparent">Video</a>
-                        </li>
-                        <li
-                            class="font-medium text-gray-900 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0"
-                        >
-                            <a href="#Metadata" class="bg-gradient-to-r from-gray-500 to-white bg-clip-text text-transparent">Metadata</a>
-                        </li>
-                    </ul>
+                    
                 </nav>
 
                 <header
@@ -65,7 +50,7 @@
                         <div
                             class="flex items-center justify-center lg:justify-start gap-2 mb-10"
                         >
-                            <span class="w-20 h-0.5 bg-red-700"></span>
+                            <span class="w-20 h-0.5 bg-red-700 lg:block sm:hidden"></span>
 
                             <p class="font-medium bg-gradient-to-r from-red-900 to-red-700 bg-clip-text text-transparent text-xl">
                                 8 Lives , is it enough?
@@ -94,7 +79,7 @@
                             >
 
                             <a
-                                href="#"
+                                href="#Metadata"
                                 class="block md:inline px-8 py-3 font-medium text-red-800 text-lg border-2 border-red-800 rounded-md hover:bg-red-800 hover:text-white transiton ease-linear duration-300"
                                 >Metadata</a
                             >
@@ -120,16 +105,15 @@
                 <h1
                     class="font-semibold text-black text-2xl md:text-3xl xl:text-5xl text-center leading-tight mb-20 xl:mb-40"
                 >Dont Trust Everything You See....<br>
-                    <span class="bg-gradient-to-r from-red-800 to-danger bg-clip-text text-transparent"
+                    <span class="bg-gradient-to-r from-red-800 to-red-400 bg-clip-text text-transparent"
                         >Even Salt
-                        Looks Like Sugar.</span
-                    >
+                        Looks Like Sugar.</span>
                 </h1>
 
                 <h1
                     class=" font-semibold text-gray-800 text-2xl md:text-3xl xl:text-5xl text-center leading-tight mb-20 xl:mb-40"
                 >
-                    <span class="bg-gradient-to-r from-danger to-red-800 bg-clip-text text-transparent"
+                    <span class="bg-gradient-to-r from-red-400 to-red-800 bg-clip-text text-transparent"
                         >Here's an Example on this video.... </span
                     >
                 </h1>
@@ -139,10 +123,18 @@
         </section>
 
         <section class="">
-            <div class="container max-w-screen-xl mx-auto px-4">
+            <div class="container flex lg:flex-row sm:flex-col max-w-screen-xl mx-auto px-4">
 
                 <div class="flex justify-center" id="video">
                     <iframe width="840" height="472.5" src="https://www.youtube.com/embed/e0B8d34OXxs?si=5Bgkl1IuDZC2Yx3N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="lg:ml-10 sm:mt-20 lg:mt-0 sm:flex sm:align-center sm:flex-col">
+                    <h1 class="font-semibold text-5xl"><span class="mb-10 bg-gradient-to-r from-red-800 to-red-400 bg-clip-text text-transparent font-bold">Synopsis</span></h1>
+                    <p class="mt-5 text-black ">
+                        
+Louwis adalah seorang pria biasa yang tak terduga terjerumus dalam kejadian tragis saat menuju wawancara kerja. Terbakarnya tubuhnya dalam siang yang terik menghadirkannya pada pengalaman yang mengubah hidupnya. Ketika dia dibangkitkan kembali dan bertemu dengan sosok berbaju putih, Louwis menyadari bahwa ia telah menjadi bagian dari ujian kehidupan yang luar biasa. <br> <br>
+Kini, setelah melalui ujian yang menghancurkannya dan kembali dengan jiwa yang baru, Louwis siap untuk mencari jawaban atas kematiannya. Namun, apakah dia benar-benar siap untuk menghadapi misteri dan perjalanan yang masih menunggunya di masa depan?
+                    </p>
                 </div>
             </div>
             <!-- container.// -->
@@ -184,7 +176,7 @@
                             </h2>
     
                             <p class="font-normal text-gray-400 text-sm md:text-lg">
-                                30 fps
+                                60 fps
                             </p>
                         </div>
     
@@ -246,7 +238,7 @@
                                 Casts
                             </h2>
     
-                            <p class="font-normal text-gray-400 text-start text-sm md:text-lg">
+                            <p class="font-normal text-gray-400 text-center text-sm md:text-lg">
                                  Louwis Steffo Dermawan (As MC) <br />
                                  Daffa Nurmahendra Radya Perdana (As Cameo) <br />
                                  Jefferson Timotius Mansur (As Cameo) <br />
@@ -282,7 +274,44 @@
             <!-- container.// -->
         </section>
 
+       
+
+        <div class="w-full h-25 bg-gradient-to-b from-white to-black p-44">
+            </div>
+
         
+        <section class="py-44 bg-black">
+            <section class="py-16 mt-22 " id="Metadata">
+                <div class="container max-w-screen-xl mx-auto px-4">
+    
+                    <h1
+                        class=" font-semibold text-gray-800 text-2xl md:text-3xl xl:text-5xl text-center leading-tight mb-20 "
+                    >
+                        <span class="bg-gradient-to-r from-gray-600 to-white text-transparent bg-clip-text"
+                            >Our Team </span
+                        >
+                    </h1>
+    
+            </section>
+            <div class="flex justify-evenly items-center">
+                <div class="text-white flex flex-col items-center justify-center border-2 border-white p-5 rounded-xl w-3/12 transition ease-linear duration-300 hover:scale-105">
+                    <img width="200" src="assets/image/Lou.png" class="mb-5 filter grayscale" alt="">
+                    <h2 class="text-2xl text-center font-bold">Louwis Steffo Dermawan</h2>
+                    <p>MC , Audio , Dubbing</p>
+                </div>
+                <div class="text-white items-center flex flex-col items-center justify-center border-2 border-white p-5 rounded-xl w-3/12 transition ease-linear duration-300 hover:scale-105 ">
+                    <img width="200" src="assets/image/Daf.png" class="mb-5 filter grayscale" alt="">
+                    <h2 class="text-2xl text-center font-bold">Daffa Nurmahendra Radya Perdana</h2>
+                    <p>Project Manager</p>
+                </div>
+                <div class="text-white items-center flex flex-col items-center justify-center border-2 border-white p-5 rounded-xl w-3/12 transition ease-linear duration-300 hover:scale-105">
+                    <img width="200" src="assets/image/Jef.png" class="mb-5 filter grayscale" alt="">
+                    <h2 class="text-2xl text-center font-bold">Jefferson Timotius Mansur</h2>
+                    <p class="text-grey-900">Visual Effect , Video</p>
+                </div>
+            </div>
+        </section>
+
         <script>
             feather.replace();
         </script>
