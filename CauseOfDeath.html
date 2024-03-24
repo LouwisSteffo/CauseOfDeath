@@ -30,6 +30,13 @@
             body {
                 font-family: "Poppins", sans-serif;
             }
+
+            @media screen and (max-width: 640px) {
+                .BagianBawah{
+                    scale: 75%;
+                    gap: 50px;
+                }
+            }
         </style>
     </head>
 
@@ -127,12 +134,12 @@
         </section>
 
         <section class="">
-            <div class="container flex lg:flex-row sm:flex-col max-w-screen-xl mx-auto px-4">
+            <div class="sm:flex lg:flex lg:flex-row sm:flex-col mx-auto px-4">
 
-                <div class="flex justify-center" id="video">
-                    <iframe width="840" height="472.5" src="https://www.youtube.com/embed/e0B8d34OXxs?si=5Bgkl1IuDZC2Yx3N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="flex justify-center lg:scale-100 sm:scale-50" id="video">
+                    <iframe width="840" height="472.5" src="https://www.youtube.com/embed/5ZsSBisL1UI?si=zQh_tKrT1qCVbuuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-                <div class="lg:ml-10 sm:mt-20 lg:mt-0 sm:flex sm:align-center sm:flex-col">
+                <div class="lg:ml-10 sm:mt-44 lg:mt-0 sm:flex sm:align-center sm:flex-col">
                     <h1 class="font-semibold text-5xl"><span class="mb-10 bg-gradient-to-r from-red-800 to-red-400 bg-clip-text text-transparent font-bold">Synopsis</span></h1>
                     <p class="mt-5 text-black ">
                         
@@ -163,7 +170,7 @@ Kini, setelah melalui ujian yang menghancurkannya dan kembali dengan jiwa yang b
         <section class="w-full py-8 md:py-16">
             <div class="w-full container flex items-center justify-center max-w-screen-xl mx-auto px-4">
                 <div class="flex justify-center w-9/12 flex-col">
-                    <div class="flex justify-between mb-20">
+                    <div class="sm:flex lg:flex justify-between sm:flex-col lg:flex-row mb-20">
                         <div class="text-center mb-10 xl:mb-0">
                             <div class="flex items-center justify-center">
                                 <div
@@ -200,7 +207,7 @@ Kini, setelah melalui ujian yang menghancurkannya dan kembali dengan jiwa yang b
                             </h2>
     
                             <p class="font-normal text-gray-400 text-sm md:text-lg">
-                                1080p
+                                1080p (1920x1080)
                             </p>
                         </div>
     
@@ -226,7 +233,7 @@ Kini, setelah melalui ujian yang menghancurkannya dan kembali dengan jiwa yang b
     
                     </div>
                     
-                    <div class="flex justify-between">
+                    <div class="sm:flex lg:flex sm:flex-col lg:flex-row justify-evenly mb-20">
                         <div class="text-center mb-10 xl:mb-0">
                             <div class="flex justify-center">
                                 <div
@@ -248,7 +255,8 @@ Kini, setelah melalui ujian yang menghancurkannya dan kembali dengan jiwa yang b
                                  Jefferson Timotius Mansur (As Cameo) <br />
                             </p>
                         </div>
-    
+
+                        
     
                         <div class="text-center mb-10 xl:mb-0">
                             <div class="flex items-center justify-center">
@@ -271,6 +279,73 @@ Kini, setelah melalui ujian yang menghancurkannya dan kembali dengan jiwa yang b
                                 Jefferson Timotius Mansur
                             </p>
                         </div>
+                        
+                    </div>
+
+                    <div class="sm:flex lg:flex sm:flex-col lg:flex-row justify-between">
+                        <div class="text-center mb-10 xl:mb-0">
+                            <div class="flex items-center justify-center">
+                                <div
+                                    class="w-24 py-9 flex justify-center bg-red-50 text-red-500 rounded-md mb-5 md:mb-10"
+                                >
+                                    <i data-feather="mic"></i>
+                                </div>
+                            </div>
+    
+                            <h2
+                                class="font-semibold text-gray-700 text-xl md:text-3xl mb-5"
+                            >
+                                Audio
+                            </h2>
+    
+                            <p class="font-normal text-gray-400 text-sm md:text-lg">
+                                Apple Earbuds Type-C <br>
+                            </p>
+                        </div>
+
+                        <div class="text-center mb-10 xl:mb-0">
+                            <div class="flex items-center justify-center">
+                                <div
+                                    class="w-24 py-9 flex justify-center bg-red-50 text-red-500 rounded-md mb-5 md:mb-10"
+                                >
+                                    <i data-feather="edit-2"></i>
+                                </div>
+                            </div>
+    
+                            <h2
+                                class="font-semibold text-gray-700 text-xl md:text-3xl mb-5"
+                            >
+                                Software
+                            </h2>
+    
+                            <p class="font-normal text-gray-400 text-sm md:text-lg">
+                                Premiere Pro <br>
+                                After Effect <br>
+                            </p>
+                        </div>
+
+                        <div class="text-center mb-10 xl:mb-0">
+                            <div class="flex justify-center">
+                                <div
+                                    class="w-24 py-9 flex justify-center bg-red-50 text-red-500 rounded-md mb-5 md:mb-10"
+                                >
+                                    <i data-feather="smartphone"></i>
+                                </div>
+                            </div>
+    
+                            <h2
+                                class="font-semibold text-gray-700 text-xl md:text-3xl mb-5"
+                            >
+                                Device
+                            </h2>
+    
+                            <p class="font-normal text-gray-400 text-center text-sm md:text-lg">
+                                 IPhone 15 Pro Max <br>
+                                 HP EliteBook 845 G8 <br>
+
+                            </p>
+                        </div>  
+    
                     </div>
 
                 </div>
@@ -297,18 +372,18 @@ Kini, setelah melalui ujian yang menghancurkannya dan kembali dengan jiwa yang b
                     </h1>
     
             </section>
-            <div class="flex justify-evenly items-center sm:flex-col lg:flex-row sm:gap-10">
-                <div class="text-white flex flex-col items-center justify-center border-2 border-white p-5 rounded-xl cursor-pointer sm:w-6/12 lg:w-3/12 transition ease-linear duration-300 hover:scale-105">
+            <div class="lg:flex sm:flex justify-evenly items-center scale-100 BagianBawah gap-5 sm:flex-col lg:flex-row sm:gap-10">
+                <div class="text-white mt-10 flex flex-col items-center justify-center border-2 border-white p-5 rounded-xl cursor-pointer sm:w-6/12 lg:w-3/12 transition ease-linear duration-300 hover:scale-105">
                     <img width="200" src="assets/image/Lou.png" class="mb-5 filter grayscale" alt="">
                     <h2 class="text-2xl text-center font-bold">Louwis Steffo Dermawan</h2>
                     <p>MC , Audio , Dubbing</p>
                 </div>
-                <div class="text-white items-center flex flex-col items-center justify-center border-2 border-white p-5 rounded-xl cursor-pointer sm:w-6/12 lg:w-3/12 transition ease-linear duration-300 hover:scale-105 ">
+                <div class="text-white mt-10 items-center flex flex-col items-center justify-center border-2 border-white p-5 rounded-xl cursor-pointer sm:w-6/12 lg:w-3/12 transition ease-linear duration-300 hover:scale-105 ">
                     <img width="200" src="assets/image/Daf.png" class="mb-5 filter grayscale" alt="">
                     <h2 class="text-2xl text-center font-bold">Daffa Nurmahendra Radya Perdana</h2>
                     <p>Project Manager</p>
                 </div>
-                <div class="text-white items-center flex flex-col items-center justify-center border-2 border-white p-5 rounded-xl sm:w-6/12 cursor-pointer lg:w-3/12 transition ease-linear duration-300 hover:scale-105">
+                <div class="text-white mt-10 items-center flex flex-col items-center justify-center border-2 border-white p-5 rounded-xl sm:w-6/12 cursor-pointer lg:w-3/12 transition ease-linear duration-300 hover:scale-105">
                     <img width="200" src="assets/image/Jef.png" class="mb-5 filter grayscale" alt="">
                     <h2 class="text-2xl text-center font-bold">Jefferson Timotius Mansur</h2>
                     <p class="text-grey-900">Visual Effect , Video</p>
